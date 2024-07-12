@@ -8,9 +8,9 @@ $usuarioRegistrado = true; // Cambia esto según tu lógica de verificación
 if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     // Aquí deberías agregar la lógica para verificar el usuario con la base de datos
     // Por ejemplo:
-    // $email = $_POST['email'];
-    // $password = $_POST['password'];
-    // $usuarioRegistrado = verificarUsuario($email, $password); // Función ficticia
+    $email = $_POST['email'];
+    $password = $_POST['password'];
+    $usuarioRegistrado = verificarUsuario($email, $password); // Función ficticia
 
     if ($usuarioRegistrado) {
         // Redirige al usuario a la página deseada si está registrado
